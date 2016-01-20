@@ -12,6 +12,7 @@ namespace Teh2
         public int SpinSpeed { get; set; }
         public string WashingMethod { get; set; }
         public bool Prewash { get; set; }
+        //method print washing mashine datas
         public void PrintData()
         {
             Console.WriteLine("Washing machine prog.: ");
@@ -20,6 +21,10 @@ namespace Teh2
             Console.WriteLine("-Washing method: " + WashingMethod);
             Console.WriteLine("-Prewash: " + Prewash);
 
+        }
+        public override string ToString()
+        {
+            return "WaterTemp: "+ WaterTemp+ ", SpinSpeed: "+ SpinSpeed+ ", WashingMethod: "+ WashingMethod+ ", Prewash: "+ Prewash;
         }
     }
 }

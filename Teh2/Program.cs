@@ -16,6 +16,7 @@ namespace Teh2
             washingMachine.WashingMethod = "Normal";
             washingMachine.Prewash = true;
             washingMachine.PrintData();
+            Console.WriteLine(washingMachine.ToString());
 
             Console.ReadLine();
         }
